@@ -5,6 +5,7 @@ import consts from '../consts'
 export function login(values) {
     return submit(values, `${consts.OAPI_URL}/login`)
 }
+
 export function signup(values) {
     return submit(values, `${consts.OAPI_URL}/signup`)
 }
@@ -23,3 +24,9 @@ function submit(values, url) {
             })
     }
 }
+
+
+
+
+
+

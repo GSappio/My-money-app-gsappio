@@ -30,7 +30,6 @@ class Auth extends Component {
         const { loginMode } = this.state
         const { handleSubmit } = this.props
         return (
-
             <div className="login-box">
                 <div className="login-logo"><b> My</b> Money</div>
                 <div className="login-box-body">
@@ -61,7 +60,6 @@ class Auth extends Component {
                 </div>
                 <Messages />
             </div>
-
         )
     }
 }

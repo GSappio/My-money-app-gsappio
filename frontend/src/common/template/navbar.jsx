@@ -12,10 +12,10 @@ class Navbar extends Component {
     changeOpen() {
         this.setState({ open: !this.state.open })
     }
+
     render() {
         const { name, email } = this.props.user
         return (
-
             <div className="navbar-custom-menu">
                 <ul className="nav navbar-nav">
                     <li onMouseLeave={() => this.changeOpen()}
@@ -45,10 +45,10 @@ class Navbar extends Component {
                     </li>
                 </ul>
             </div>
-
         )
     }
 }
+
 const mapStateToProps = state => ({ user: state.auth.user })
 const mapDispatchToProps = dispatch => bindActionCreators({ logout }, dispatch)
 export default connect(mapStateToProps, mapDispatchToProps)(Navbar)
